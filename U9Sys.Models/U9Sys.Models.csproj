@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6878DD3-4709-4360-B7F3-250AB3CC906C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>U9Sys.Models</RootNamespace>
+    <AssemblyName>U9Sys.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;Test</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.API.ErpAPISV.Agent">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.API.ErpAPISV.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.API.ErpAPISV.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.API.ErpAPISV.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Bus.BusBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Bus.BusBE.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Bus.BusBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Bus.BusBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Bus.BusBP">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Bus.BusBP.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Bus.BusBP.Agent">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Bus.BusBP.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Bus.BusBP.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Bus.BusBP.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Inv.InvBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Inv.InvBE.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Inv.InvBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Inv.InvBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Inv.InvBP">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Inv.InvBP.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Inv.InvBP.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Inv.InvBP.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.AccBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.AccBE.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.AccBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.AccBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.MemBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.MemBE.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.MemBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.MemBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.PubBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.PubBE.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.PubBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.PubBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.PubBP">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.PubBP.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.PubBP.Agent">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.PubBP.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.PubBP.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.PubBP.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.SNBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.SNBE.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Pub.SNBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Pub.SNBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Scm.ScmBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Scm.ScmBE.dll</HintPath>
+    </Reference>
+    <Reference Include="SV.Scm.ScmBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\SV.Scm.ScmBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UFIDA.U9.Approval.ApprovalBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Approval.ApprovalBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Approval.ApprovalBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Approval.ApprovalBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Approval.ApprovalBP.Agent">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Approval.ApprovalBP.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Approval.ApprovalBP.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Approval.ApprovalBP.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Approval.Util">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Approval.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Base.BaseBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Base.BaseBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Base.BaseBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Base.BaseBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Base.BaseBP.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Base.BaseBP.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.BS.AppController.AppControllerBP">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.BS.AppController.AppControllerBP.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.BS.AppController.AppControllerBP.Agent">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.BS.AppController.AppControllerBP.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.BS.AppController.AppControllerBP.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.BS.AppController.AppControllerBP.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.BS.Job.RequestClient">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.BS.Job.RequestClient.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.MFG.MFGSV.Agent">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.MFG.MFGSV.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.MFG.MFGSV.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.MFG.MFGSV.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.MFGBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.MFGBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.MFGBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.MFGBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.ParaConfigBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.ParaConfigBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.ParaConfigBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.ParaConfigBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.PubBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.PubBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.PubBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.PubBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.QCBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.QCBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.QCBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.QCBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.SCMBP.Agent">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.SCMBP.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.SCMBP.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CBO.SCMBP.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.Common.FileDBService">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CS.Common.FileDBService.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.Unify.UnifyBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CS.Unify.UnifyBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.Unify.UnifyBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CS.Unify.UnifyBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.Unify.UnifyBP.Agent">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CS.Unify.UnifyBP.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.Unify.UnifyBP.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CS.Unify.UnifyBP.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.Workflow.Interoperation">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CS.Workflow.Interoperation.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.Workflow.Model.Validate">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CS.Workflow.Model.Validate.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.Workflow.Model.VerifyResult">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CS.Workflow.Model.VerifyResult.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.Workflow.WorkflowBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CS.Workflow.WorkflowBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.Workflow.WorkflowBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.CS.Workflow.WorkflowBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Lot.LotBE">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Lot.LotBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Lot.LotBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Lot.LotBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.PM.PMBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.PM.PMBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Security.SecurityBP.Agent">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Security.SecurityBP.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Security.SecurityBP.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Security.SecurityBP.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.Sn.SnSV.Agent">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.U9.Sn.SnSV.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.UBF.MD.Entity.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFIDA.UBF.MD.Entity.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Business">
+      <HintPath>D:\yonyou\U9V50\Portal\bin\UFSoft.UBF.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.ExportService.PrintReferenceBE.Deploy">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFSoft.UBF.ExportService.PrintReferenceBE.Deploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.PL">
+      <HintPath>D:\yonyou\U9V50\Portal\bin\UFSoft.UBF.PL.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Util.DataAccess">
+      <HintPath>D:\U9Project\VsProject\ServiceSys\05.Scm\ScmBE\Entity\bin\Debug\UFSoft.UBF.Util.DataAccess.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScmBE\EntrustedRepairDocBE\EntrustedRepairDocExtend.cs" />
+    <Compile Include="ScmBE\EntrustedRepairDocBE\CurrentNodeEnum.cs" />
+    <Compile Include="ScmBE\EntrustedRepairDocBE\EntrustedRepairDoc.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
